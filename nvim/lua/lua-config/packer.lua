@@ -14,13 +14,13 @@ return require('packer').startup(function(use)
     }
 
     --theme for nvim
-    use { "catppuccin/nvim", as = "catppuccin" }
-    -- use {'marko-cerovac/material.nvim',
-    --     config = function ()
-    --         vim.g.material_style = "darker";
-    --     end
-    --
-    -- }
+    -- use { "catppuccin/nvim", as = "catppuccin" }
+    use {'marko-cerovac/material.nvim',
+        config = function ()
+            vim.g.material_style = "darker";
+        end
+
+    }
 
     --syntax highlight
     use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
