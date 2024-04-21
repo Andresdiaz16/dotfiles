@@ -31,14 +31,15 @@ require('mason-lspconfig').setup({
         end,
         ['html'] = function ()
             require("lspconfig").html.setup{}
-        end;
+        end,
+        ['omnisharp'] = function ()
+            require("lspconfig").omnisharp.setup{}
+        end,
+        ['cmake']=function ()
+            require("lspconfig").cmake.setup{}
+        end,
 
     }
-})
-
-require('lspconfig').dartls.setup({
-    cmd = { "/opt/homebrew/bin/dart", "language-server", "--protocol=lsp" },
-    filetypes = {'dart'},
 })
 
 local signs = { Error="", Warn="", Hint="", Info=""}
@@ -148,7 +149,7 @@ cmp.setup({
     mapping = cmp.mapping.preset.insert({
         ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
         ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
-        ['<TAB>'] = cmp.mapping.confirm({ select = true }),
+        ['<C-y>'] = cmp.mapping.confirm({ select = true }),
         ['<C-Space>'] = cmp.mapping.complete(),
     }),
 })
