@@ -32,11 +32,16 @@ require('mason-lspconfig').setup({
         ['omnisharp'] = function ()
             require("lspconfig").omnisharp.setup{}
         end,
-        ['cmake']=function ()
+        ['cmake'] = function ()
             require("lspconfig").cmake.setup{}
         end,
     }
 })
+
+
+require('lspconfig').dartls.setup{
+    cmd = { "dart", "language-server", "--protocol=lsp" }
+}
 
 local signs = { Error="", Warn="", Hint="", Info=""}
 for type,icon in pairs(signs) do
