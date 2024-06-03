@@ -1,6 +1,6 @@
 require 'mellifluous'.setup({
     dim_inactive = false,
-    color_set = 'mellifluous',
+    color_set = 'kanagawa_dragon',
     styles = { -- see :h attr-list for options. set {} for NONE, { option = true } for option
         comments = { italic = true },
         conditionals = {},
