@@ -15,15 +15,25 @@ return require('packer').startup(function(use)
 
     --theme for nvim
     -- use { "catppuccin/nvim", as = "catppuccin" }
-    use {'marko-cerovac/material.nvim',
-        config = function ()
-            vim.g.material_style = "darker";
-        end
+    -- use {'marko-cerovac/material.nvim',
+    --     config = function ()
+    --         vim.g.material_style = "darker";
+    --     end
+    --
+    -- }
 
-    }
+    use({
+        'ramojus/mellifluous.nvim',
+        -- version = "v0.*", -- uncomment for stable config (some features might be missed if/when v1 comes out)
+        config = function()
+            require'mellifluous'.setup({}) -- optional, see configuration section.
+            vim.cmd('colorscheme mellifluous')
+        end,
+    })
+
 
     --syntax highlight
-    use( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
+    use{'nvim-treesitter/nvim-treesitter', tag='v0.9.2',  run = ':TSUpdate'}
 
     --hotswap files
     use {
@@ -76,7 +86,7 @@ return require('packer').startup(function(use)
     use('RRethy/vim-illuminate')
 
     --plugin for auto completion of {},(),"" and ''
-    use ('echasnovski/mini.pairs')
+    -- use ('echasnovski/mini.pairs')
 
     --plugin for status line
     use("nvim-lualine/lualine.nvim")
@@ -96,5 +106,13 @@ return require('packer').startup(function(use)
     use {
         "github/copilot.vim"
     }
+
+    use({
+        "kdheepak/lazygit.nvim",
+        -- optional for floating window border decoration
+        requires = {
+            "nvim-lua/plenary.nvim",
+        },
+    })
 
 end)
