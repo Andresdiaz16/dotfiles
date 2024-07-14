@@ -8,7 +8,6 @@ vim.keymap.set("n","<leader>to",":tabnew<CR>") --open new tab
 vim.keymap.set("n","<leader>tx",":tabclose<CR>") --close current tab
 vim.keymap.set("n","<leader>tn",":tabn<CR>") --go to next tab
 vim.keymap.set("n","<leader>tp",":tabp<CR>") --go to previouse tab
-vim.keymap.set("n","<leader>sx",":close<CR>") --close current split
 
 vim.keymap.set("n", "<C-d>","<C-d>zz")
 vim.keymap.set("n", "<C-u>","<C-u>zz")

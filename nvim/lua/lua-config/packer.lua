@@ -54,7 +54,6 @@ return require('packer').startup(function(use)
     }
 
     --plugin for git handling
-    use('tpope/vim-fugitive')
     use('lewis6991/gitsigns.nvim')
 
 
@@ -85,8 +84,6 @@ return require('packer').startup(function(use)
     --plugin for highlight words under cursor
     use('RRethy/vim-illuminate')
 
-    --plugin for auto completion of {},(),"" and ''
-    -- use ('echasnovski/mini.pairs')
 
     --plugin for status line
     use("nvim-lualine/lualine.nvim")

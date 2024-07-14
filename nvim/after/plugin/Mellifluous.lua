@@ -1,6 +1,9 @@
 require 'mellifluous'.setup({
     dim_inactive = false,
     color_set = 'mellifluous',
+    mellifluous = {
+        bg_contrast = "hard",
+    },
     styles = { -- see :h attr-list for options. set {} for NONE, { option = true } for option
         comments = { italic = true },
         conditionals = {},
