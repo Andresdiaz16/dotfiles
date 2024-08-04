@@ -1,6 +1,6 @@
 require 'mellifluous'.setup({
     dim_inactive = false,
-    color_set = 'mellifluous',
+    color_set = 'kanagawa_dragon',
     mellifluous = {
         bg_contrast = "hard",
     },
