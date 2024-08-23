@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n","<leader>pv",":Neotree position=current<CR>") --go back to filetree
+vim.keymap.set("n","<leader>pv",":Neotree reveal<CR>") --go back to filetree
 vim.keymap.set("n","<leader>sv","<C-w>v") --split vertical
 vim.keymap.set("n","<leader>sh","<C-w>s") --split horitzon
 vim.keymap.set("n","<leader>se","<C-w>=") --make split windows equal width
