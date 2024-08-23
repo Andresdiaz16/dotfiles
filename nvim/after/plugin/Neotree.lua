@@ -6,14 +6,8 @@ require("neo-tree").setup({
             hide_gitignore = false
         },
         follow_current_file = {
-            enable = true,
+            enabled = true,
             leave_dirs_open = false
         },
     },
-    buffers = {
-        follow_current_file = {
-            enable = true,
-            leave_dirs_open = false
-        },
-    }
 })
