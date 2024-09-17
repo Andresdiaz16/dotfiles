@@ -1,26 +1,35 @@
 require 'mellifluous'.setup({
     dim_inactive = false,
-    color_set = 'kanagawa_dragon',
-    mellifluous = {
-        bg_contrast = "hard",
-    },
-    styles = { -- see :h attr-list for options. set {} for NONE, { option = true } for option
-        comments = { italic = true },
-        conditionals = {},
-        folds = {},
-        loops = {},
-        functions = {},
-        keywords = {},
-        strings = {},
-        variables = {},
-        numbers = {},
-        booleans = {},
-        properties = {},
+    colorset = 'kanagawa_dragon',
+    color_overrides = {
+            dark = {
+                bg = function(bg)
+                    return bg:darkened(2) -- hard contrast
+                    -- return bg -- medium contrast
+                    -- return bg:lightened(2) -- soft contrast
+                end,
+            },
+            light = {
+                bg = function(bg)
+                    return bg:lightened(2) -- hard contrast
+                    -- return bg -- medium contrast
+                    -- return bg:darkened(2) -- soft contrast
+                end,
+            },
+        },
+    styles = {
+        main_keywords = {},
+        other_keywords = {},
         types = {},
         operators = {},
+        strings = {},
+        functions = {},
+        constants = {},
+        comments = { italic = true },
         markup = {
             headings = { bold = true },
         },
+        folds = {},
     },
     transparent_background = {
         enabled = false,
