@@ -4,7 +4,7 @@ local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 
 require('mason-lspconfig').setup({
-    ensure_installed = {'clangd','tsserver','lua_ls'},
+    ensure_installed = {'clangd','ts_ls','lua_ls'},
     handlers = {
         lsp.default_setup,
         ["lua_ls"] = function ()
@@ -20,8 +20,8 @@ require('mason-lspconfig').setup({
                 }
             }
         end,
-        ["tsserver"] = function ()
-            require('lspconfig').tsserver.setup{}
+        ["ts_ls"] = function ()
+            require('lspconfig').ts_ls.setup{}
         end,
         ["clangd"] = function ()
             require("lspconfig").clangd.setup{}
