@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-vim.keymap.set("n","<leader>pv",":Neotree reveal<CR>") --go back to filetree
 vim.keymap.set("n","<leader>sv","<C-w>v") --split vertical
 vim.keymap.set("n","<leader>sh","<C-w>s") --split horitzon
 vim.keymap.set("n","<leader>se","<C-w>=") --make split windows equal width
@@ -25,3 +23,5 @@ vim.keymap.set("n","<leader>d","\"_d")
 vim.keymap.set("v","<leader>d","\"_d")
 
 vim.keymap.set("n",":",":<C-f>i")
+
+vim.keymap.set("n","-","<CMD>Oil<CR>")
