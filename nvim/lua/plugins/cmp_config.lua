@@ -26,7 +26,6 @@ local kind_icons = {
   TypeParameter = ' ',
 }
 
-
 return {
     'hrsh7th/nvim-cmp',
     priority = 53,
@@ -41,7 +40,8 @@ return {
             { name = 'buffer'   }
         },
         window = {
-            completion = require('cmp').config.window.bordered()
+            completion = require('cmp').config.window.bordered(),
+            -- documentation = require('cmp').config.window.bordered()
         },
         formatting = {
             fields = { 'abbr','menu','kind'},

@@ -54,18 +54,10 @@ return {
                 cmp = true,
                 gitsigns = true,
                 indent_blankline = true,
-                nvim_tree = {
-                    enabled = true,
-                    show_root = false,
-                },
-                neo_tree = {
-                    enabled = true,
-                },
                 telescope = {
                     enabled = true,
                     nvchad_like = true,
                 },
-                startify = true,
             },
         })
         vim.cmd([[colorscheme mellifluous]])
