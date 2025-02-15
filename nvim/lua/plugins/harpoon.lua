@@ -6,7 +6,7 @@ return {
     },
 
     init = function()
-            require("harpoon"):setup() 
+            require("harpoon"):setup()
         end
     ,
 
