@@ -26,4 +26,3 @@ vim.keymap.set("n",":",":<C-f>i")
 
 vim.keymap.set("n","-","<CMD>Oil<CR>")
 
-vim.keymap.set('n','<leader>cop', ':Copilot panel<CR>')
