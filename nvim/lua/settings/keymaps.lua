@@ -22,7 +22,5 @@ vim.keymap.set("n","<leader>Y","\"+Y")
 vim.keymap.set("n","<leader>d","\"_d")
 vim.keymap.set("v","<leader>d","\"_d")
 
-vim.keymap.set("n",":",":<C-f>i")
-
 vim.keymap.set("n","-","<CMD>Oil<CR>")
 
