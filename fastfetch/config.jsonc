@@ -1,10 +1,10 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "source": "/home/andres/Pictures/png-transparent-nier-automata-video-game-anime-anime-comics-game-cg-artwork-thumbnail.png",
+        "source": "/home/andres/Pictures/nier.png",
         "type": "kitty-direct",
         "height": 23,
-        "width": 30
+        "width": 27
     },
     "display": {
         "separator": " : "

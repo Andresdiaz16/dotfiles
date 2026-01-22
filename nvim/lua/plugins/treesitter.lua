@@ -5,7 +5,7 @@ return {
         require("nvim-treesitter.install").update({ with_sync = true })()
     end,
     opts = {
-        ensure_installed = { "tsx", "html", "cpp", "javascript", "typescript", "python", "c","lua", "vim", "vimdoc", "dockerfile" },
+        ensure_installed = { "tsx", "html", "cpp", "javascript", "typescript", "python", "c","lua", "vim", "vimdoc", "dockerfile", "go" },
 
         sync_install = false,
 
