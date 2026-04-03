@@ -28,3 +28,4 @@ vim.opt.scrolloff = 9
 vim.opt.updatetime = 50
 
 vim.opt.cursorline = true
+vim.opt.signcolumn = 'yes'

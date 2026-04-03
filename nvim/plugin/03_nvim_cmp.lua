@@ -27,7 +27,10 @@ local kind_icons = {
     TypeParameter = ' ',
 }
 
-vim.pack.add({'https://github.com/hrsh7th/nvim-cmp'})
+vim.pack.add({ 
+    'https://github.com/hrsh7th/nvim-cmp',
+    'https://github.com/hrsh7th/cmp-nvim-lsp'
+})
 
 local cmp = require("cmp")
 local defaults = require("cmp.config.default")()
@@ -67,3 +70,11 @@ cmp.setup({
     },
     sorting = defaults.sorting,
 })
+
+local lsp_defaults = require('lspconfig').util.default_config
+
+lsp_defaults.capabilities = vim.tbl_deep_extend(
+    'force',
+    lsp_defaults.capabilities,
+    require('cmp_nvim_lsp').default_capabilities()
+)
