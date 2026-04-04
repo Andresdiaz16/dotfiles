@@ -71,3 +71,10 @@ vim.lsp.config('lua_ls',{
     })
   end,
 })
+vim.lsp.config('dartls',{
+    settings = {
+        dart = {
+            allowAnalytics = false,
+        }
+    }
+})
