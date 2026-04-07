@@ -22,3 +22,4 @@ vim.keymap.set("n","<leader>Y","\"+Y")
 
 vim.keymap.set("n","<leader>d","\"_d")
 vim.keymap.set("v","<leader>d","\"_d")
+vim.keymap.set('n','<leader>u',"<CMD>Undotree<CR>")

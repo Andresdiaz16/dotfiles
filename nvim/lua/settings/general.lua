@@ -15,6 +15,7 @@ vim.opt.smartindent = true
 vim.opt.swapfile = true
 vim.opt.backup = false
 
+vim.cmd('packadd nvim.undotree')
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 

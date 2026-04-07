@@ -1,3 +1,3 @@
-require('settings.keymaps')
 require('settings.general')
+require('settings.keymaps')
 vim.lsp.enable('dartls')
